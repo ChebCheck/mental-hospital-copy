@@ -66,7 +66,7 @@ public class PatientServiceTest
 		var result = await patientService.GetAll();
 
 		mockPatientRepository.Verify(rep => rep.GetAll());
-		result.FirstOrDefault(p => p.FirstName == patientModel.FirstName).ShouldBeNull();
+		result.FirstOrDefault(p => p.FirstName == patientModel.FirstName).ShouldNotBeNull();
 	}
 
 	[Fact]
