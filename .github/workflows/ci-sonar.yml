@@ -8,8 +8,8 @@ on:
 
 env:
  NUGET_PACKAGES_DIRECTORY: ".nuget"
- SOURCE_CODE_PATH: MentalHospital.API/*
- PATH_TO_SLN: "MentalHospital.API/MentalHospital.API"
+ SOURCE_CODE_PATH: mental-hospital-copy/**/*
+ PATH_TO_SLN: "./mental-hospital-copy"
  GIT_DEPTH: '0'
 
 jobs:
