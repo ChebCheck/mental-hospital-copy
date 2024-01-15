@@ -16,6 +16,8 @@ public class Patient : Entity
 
 	public DateTime UnregisteredAt { get; set; }
 
+	public Guid? PersonalDoctorId { get; set; }
+
 	public Doctor? PersonalDoctor { get; set; }
 
 	public List<Session> Sessions { get; set; } = new();
