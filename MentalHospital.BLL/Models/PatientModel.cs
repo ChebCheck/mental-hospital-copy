@@ -7,6 +7,8 @@ public class PatientModel
 	public string? FirstName { get; set; }
 
 	public string? LastName { get; set; }
+	
+	public string? LastName2 { get; set; }
 
 	public string? Diagnosis { get; set; }
 
