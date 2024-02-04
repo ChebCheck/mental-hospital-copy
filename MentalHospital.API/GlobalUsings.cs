@@ -8,4 +8,4 @@ global using MentalHospital.API.ViewModels;
 global using MentalHospital.BLL.Extensions;
 global using MentalHospital.BLL.Interfaces;
 global using MentalHospital.BLL.Models;
-global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc;//
