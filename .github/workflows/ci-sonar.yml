@@ -14,7 +14,7 @@ env:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -42,10 +42,6 @@ jobs:
     - name: Install SonarCloud scanner
       if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
       run: dotnet tool install --global dotnet-sonarscanner
-
-    - name: Install Code Coverage tool
-        shell: powershell
-        run: dotnet tool install --global JetBrains.dotCover.GlobalTool
 
     - name: Restore dependencies
       run: dotnet restore $PATH_TO_SLN --packages $NUGET_PACKAGES_DIRECTORY -f
