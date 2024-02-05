@@ -8,7 +8,7 @@ on:
 
 env:
  NUGET_PACKAGES_DIRECTORY: ".nuget"
- PATH_TO_SLN: "./MentalHospital.sln"
+ PATH_TO_SLN: "MentalHospital.sln"
  GIT_DEPTH: '0'
 
 jobs:
