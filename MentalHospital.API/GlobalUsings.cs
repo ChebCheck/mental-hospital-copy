@@ -1,3 +1,4 @@
+//gloval usings
 global using AutoMapper;
 global using FluentValidation;
 global using MentalHospital.API.FluentValidation;
