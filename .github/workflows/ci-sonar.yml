@@ -60,5 +60,5 @@ jobs:
           dotnet tool restore
           dotnet-sonarscanner begin /k:"$PROJECT_KEY" /o:"$ORGANIZATION" /d:sonar.token="$SONAR_TOKEN" /d:sonar.host.url="$SONAR_HOST_URL" /d:sonar.coverage.exclusions="$EXCLUDE_FROM_COVERAGE" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
           dotnet build --configuration Release ${{ env.PATH_TO_SLN }}
-          dotnet-coverage collect "dotnet test" ${{ env.PATH_TO_SLN }} -f xml -o "coverage.xml" --no-restore --no-build --verbosity normal
+          dotnet-coverage collect "dotnet test" -f xml -o "**/coverage.xml" --no-restore --no-build --verbosity normal
           dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
